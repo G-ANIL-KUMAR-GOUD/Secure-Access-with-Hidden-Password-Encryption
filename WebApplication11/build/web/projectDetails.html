@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projectDetails</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #d6cfc1; margin: 0; padding: 0; color: #070202;">
+
+    <div style="width: 80%; margin: 20px auto; background-color: rgb(224, 204, 185); padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <header style="text-align: center; margin-bottom: 20px;">
+            <h1 style="font-size: 2.5em; color: #540306;">Secure Access with Hidden Password Encryption</h1>
+        </header>
+
+        <section style="margin-bottom: 30px;">
+            <h2 style="font-size: 1.8em; color: #2a3d66; margin-bottom: 10px;">Project Overview</h2>
+            <p style="font-size: 1em; line-height: 1.6;">This paper proposes a password authentication framework designed for secure password storage, aiming to enhance security in systems based on password authentication. This framework is easily integrable into existing authentication systems.</p>
+        </section>
+
+        <section style="margin-bottom: 30px;">
+            <h2 style="font-size: 1.8em; color: #2a3d66; margin-bottom: 10px;">How It Works</h2>
+            <p style="font-size: 1em; line-height: 1.6;">The process involves several stages for transforming a plain password into a secure format:</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">
+                    <strong style="color: #3d5a80;">Hashing:</strong> The received plain password is hashed using a cryptographic hash function, such as SHA-256.
+                </li>
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">
+                    <strong style="color: #3d5a80;">Negative Password:</strong> The hashed password is converted into a negative password.
+                </li>
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">
+                    <strong style="color: #3d5a80;">Encryption:</strong> The negative password is encrypted into an Encrypted Negative Password (ENP) using a symmetric-key algorithm, such as AES.
+                </li>
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">
+                    <strong style="color: #3d5a80;">Multi-iteration Encryption:</strong> Multi-iteration encryption may be applied to improve security further.
+                </li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 30px;">
+            <h2 style="font-size: 1.8em; color: #2a3d66; margin-bottom: 10px;">Security Features</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">Resists lookup table attacks, including rainbow table attacks.</li>
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">Provides stronger protection under dictionary attacks.</li>
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">Does not require extra elements like salt, making it efficient and simple.</li>
+                <li style="font-size: 1.1em; line-height: 1.6; margin-bottom: 10px;">Combines cryptographic hash functions, negative password transformation, and symmetric encryption.</li>
+            </ul>
+        </section>
+
+        <section style="margin-bottom: 30px;">
+            <h2 style="font-size: 1.8em; color: #2a3d66; margin-bottom: 10px;">Conclusion</h2>
+            <p style="font-size: 1em; line-height: 1.6;">This ENP-based framework provides a robust solution to password protection without requiring additional information except the plain password itself. It enhances the security of password-based authentication systems and prevents common precomputation attacks.</p>
+        </section>
+    </div>
+
+</body>
+</html>
